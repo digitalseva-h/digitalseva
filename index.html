@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital Seva | Digital Marketing Agency</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#081120;
+color:#fff;
+overflow-x:hidden;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+.container{
+width:90%;
+max-width:1300px;
+margin:auto;
+}
+
+nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:999;
+    padding:10px 25px;
+    background:rgba(0,0,0,.85);
+    backdrop-filter:blur(15px);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    min-height:65px;
+	padding-left:15px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    font-size:28px;
+    font-weight:800;
+    color:#FFD700;
+    margin-left:0;
+    padding-left:0;
+}
+
+.logo img{
+    width:45px;
+    height:45px;
+    object-fit:contain;
+    flex-shrink:0;
+}
+
+.logo span{
+    line-height:1;
+}
+
+.nav-links{
+    display:flex;
+    gap:22px;
+    align-items:center;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    font-weight:500;
+    font-size:15px;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+color:#FFD700;
+}
+
+/* HERO */
+
+.hero{
+padding:160px 8% 100px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:50px;
+flex-wrap:wrap;
+}
+
+.hero-content{
+flex:1;
+min-width:320px;
+}
+
+.hero-content h1{
+font-size:65px;
+line-height:1.1;
+margin-bottom:20px;
+}
+
+.hero-content span{
+color:#FFD700;
+}
+
+.hero-content p{
+font-size:20px;
+color:#cbd5e1;
+line-height:1.8;
+margin-bottom:30px;
+}
+
+.hero-btns{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.btn{
+padding:16px 35px;
+border:none;
+border-radius:50px;
+text-decoration:none;
+font-weight:700;
+cursor:pointer;
+}
+
+.btn-primary{
+background:#FFD700;
+color:#000;
+}
+
+.btn-whatsapp{
+background:#25D366;
+color:white;
+}
+
+.hero-image{
+flex:1;
+min-width:320px;
+}
+
+.hero-image img{
+width:100%;
+max-width:600px;
+border-radius:25px;
+box-shadow:0 20px 60px rgba(0,0,0,.4);
+}
+
+/* SECTION */
+
+section{
+padding:90px 8%;
+}
+
+.section-title{
+text-align:center;
+font-size:50px;
+margin-bottom:60px;
+color:#FFD700;
+}
+
+/* SERVICES */
+
+.services-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+}
+
+.service-card{
+background:#111c33;
+padding:35px;
+border-radius:20px;
+transition:.4s;
+border:1px solid rgba(255,215,0,.15);
+}
+
+.service-card:hover{
+transform:translateY(-10px);
+border-color:#FFD700;
+}
+
+.service-card h3{
+font-size:26px;
+margin-bottom:15px;
+color:#FFD700;
+}
+
+.service-card ul{
+list-style:none;
+}
+
+.service-card ul li{
+padding:8px 0;
+color:#cbd5e1;
+}
+
+/* STATS */
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+margin-top:40px;
+}
+
+.stat-box{
+background:#111c33;
+padding:35px;
+text-align:center;
+border-radius:20px;
+}
+
+.stat-box h2{
+font-size:50px;
+color:#FFD700;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.hero-content h1{
+font-size:42px;
+}
+
+.nav-links{
+display:none;
+}
+
+.section-title{
+font-size:36px;
+}
+
+}
+</style>
+</head>
+<body>
+
+<nav>
+
+<div class="logo">
+    <img src="digitallogo.png" alt="Digital Seva Logo">
+    <span>Digital Seva</span>
+</div>
+
+<div class="nav-links">
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#portfolio">Portfolio</a>
+<a href="#contact">Contact</a>
+</div>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<h1>
+Grow Your Business With
+<span>Digital Seva</span>
+</h1>
+
+<p>
+Website Development, Mobile Apps,
+Social Media Marketing,
+Performance Marketing,
+Affiliate Marketing,
+Business Strategy & Planning,
+Meta Ads, Google Ads,
+LinkedIn Ads and Lead Generation.
+</p>
+
+<div class="hero-btns">
+
+<a href="#contact" class="btn btn-primary">
+🚀 Free Consultation
+</a>
+
+<a href="https://wa.me/918850527116"
+class="btn btn-whatsapp">
+💬 WhatsApp Now
+</a>
+
+</div>
+
+</div>
+
+<div class="hero-image">
+
+<!-- Replace with your image -->
+<img src="marketingbyjaved.png" alt="Digital Seva">
+
+</div>
+
+</section>
+
+<!-- SERVICES -->
+
+<section id="services">
+
+<h2 class="section-title">
+Our Services
+</h2>
+
+<div class="services-grid">
+
+<div class="service-card">
+<h3>🌐 Website Development</h3>
+<ul>
+<li>Business Websites</li>
+<li>Ecommerce Websites</li>
+<li>Landing Pages</li>
+<li>WordPress Development</li>
+</ul>
+</div>
+
+<div class="service-card">
+<h3>📱 App Development</h3>
+<ul>
+<li>Android Apps</li>
+<li>iOS Apps</li>
+<li>Flutter Apps</li>
+<li>API Integrations</li>
+</ul>
+</div>
+
+<div class="service-card">
+<h3>📣 Social Media Marketing</h3>
+<ul>
+<li>Facebook Marketing</li>
+<li>Instagram Marketing</li>
+<li>Content Creation</li>
+<li>Brand Awareness</li>
+</ul>
+</div>
+
+<div class="service-card">
+<h3>📈 Performance Marketing</h3>
+<ul>
+<li>Lead Generation</li>
+<li>Sales Funnels</li>
+<li>Conversion Optimization</li>
+<li>ROI Campaigns</li>
+</ul>
+</div>
+
+<div class="service-card">
+<h3>🤝 Affiliate Marketing</h3>
+<ul>
+<li>Affiliate Setup</li>
+<li>Influencer Marketing</li>
+<li>Revenue Partnerships</li>
+<li>Tracking Systems</li>
+</ul>
+</div>
+
+<div class="service-card">
+<h3>🧠 Business Strategy</h3>
+<ul>
+<li>Business Planning</li>
+<li>Market Research</li>
+<li>Growth Consulting</li>
+<li>Revenue Scaling</li>
+</ul>
+</div>
+
+<div class="service-card">
+<h3>📊 Meta Ads</h3>
+<ul>
+<li>Facebook Ads</li>
+<li>Instagram Ads</li>
+<li>Retargeting</li>
+<li>Pixel Setup</li>
+</ul>
+</div>
+
+<div class="service-card">
+<h3>🔍 Google Ads</h3>
+<ul>
+<li>Search Ads</li>
+<li>Display Ads</li>
+<li>YouTube Ads</li>
+<li>Shopping Campaigns</li>
+</ul>
+</div>
+
+<div class="service-card">
+<h3>💼 LinkedIn Ads</h3>
+<ul>
+<li>B2B Leads</li>
+<li>Corporate Branding</li>
+<li>Recruitment Ads</li>
+<li>Audience Targeting</li>
+</ul>
+</div>
+
+</div>
+
+</section>
+<!-- PORTFOLIO -->
+
+<section id="portfolio">
+
+<h2 class="section-title">
+Our Portfolio
+</h2>
+
+<div class="services-grid">
+
+<div class="service-card">
+<h3>🏢 Corporate Website</h3>
+<p>
+Professional company website with lead generation,
+SEO optimization and CRM integration.
+</p>
+</div>
+
+<div class="service-card">
+<h3>🛒 Ecommerce Store</h3>
+<p>
+Modern ecommerce platform with payment gateway,
+inventory management and marketing automation.
+</p>
+</div>
+
+<div class="service-card">
+<h3>🏥 Healthcare App</h3>
+<p>
+Appointment booking, telemedicine,
+patient management and notifications.
+</p>
+</div>
+
+<div class="service-card">
+<h3>🏫 Education Platform</h3>
+<p>
+Online learning portal with video courses,
+quizzes and student management.
+</p>
+</div>
+
+<div class="service-card">
+<h3>🏠 Real Estate Landing Page</h3>
+<p>
+Lead generation landing pages integrated with CRM,
+WhatsApp and Meta Pixel.
+</p>
+</div>
+
+<div class="service-card">
+<h3>📈 Performance Marketing</h3>
+<p>
+Google Ads and Meta Ads campaigns generating
+qualified leads and sales.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- STATS -->
+
+<section>
+
+<h2 class="section-title">
+Why Choose Digital Seva
+</h2>
+
+<div class="stats">
+
+<div class="stat-box">
+<h2>200+</h2>
+<p>Projects Delivered</p>
+</div>
+
+<div class="stat-box">
+<h2>100+</h2>
+<p>Happy Clients</p>
+</div>
+
+<div class="stat-box">
+<h2>9+</h2>
+<p>Years Experience</p>
+</div>
+
+<div class="stat-box">
+<h2>95%</h2>
+<p>Client Satisfaction</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2 class="section-title">
+Get Free Consultation
+</h2>
+
+<div style="
+max-width:800px;
+margin:auto;
+background:#111c33;
+padding:40px;
+border-radius:20px;
+">
+
+<form>
+
+<input
+type="text"
+placeholder="Your Name"
+required
+style="
+width:100%;
+padding:15px;
+margin-bottom:15px;
+border:none;
+border-radius:10px;
+">
+
+<input
+type="email"
+placeholder="Email Address"
+required
+style="
+width:100%;
+padding:15px;
+margin-bottom:15px;
+border:none;
+border-radius:10px;
+">
+
+<input
+type="tel"
+placeholder="Phone Number"
+style="
+width:100%;
+padding:15px;
+margin-bottom:15px;
+border:none;
+border-radius:10px;
+">
+
+<select
+style="
+width:100%;
+padding:15px;
+margin-bottom:15px;
+border:none;
+border-radius:10px;
+">
+
+<option>Select Service</option>
+<option>Website Development</option>
+<option>App Development</option>
+<option>Social Media Marketing</option>
+<option>Performance Marketing</option>
+<option>Affiliate Marketing</option>
+<option>Business Strategy</option>
+<option>Meta Ads</option>
+<option>Google Ads</option>
+<option>LinkedIn Ads</option>
+
+</select>
+
+<textarea
+rows="6"
+placeholder="Tell us about your project..."
+style="
+width:100%;
+padding:15px;
+margin-bottom:15px;
+border:none;
+border-radius:10px;
+"></textarea>
+
+<button
+type="submit"
+class="btn btn-primary"
+style="
+width:100%;
+font-size:18px;
+">
+
+🚀 Request Free Consultation
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<!-- CTA -->
+
+<section
+style="
+text-align:center;
+background:#111c33;
+">
+
+<h2
+style="
+font-size:50px;
+margin-bottom:20px;
+color:#FFD700;
+">
+
+Ready To Grow Your Business?
+
+</h2>
+
+<p
+style="
+font-size:20px;
+margin-bottom:30px;
+color:#cbd5e1;
+">
+
+Let's build websites, apps and marketing campaigns
+that generate real revenue.
+
+</p>
+
+<a
+href="https://wa.me/918850527116"
+class="btn btn-whatsapp">
+
+💬 Chat on WhatsApp
+
+</a>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer
+style="
+padding:60px 8%;
+background:#050b15;
+text-align:center;
+">
+
+<h2
+style="
+color:#FFD700;
+margin-bottom:20px;
+">
+
+Digital Seva
+
+</h2>
+
+<p
+style="
+margin-bottom:25px;
+color:#cbd5e1;
+">
+
+Websites. Apps. Marketing. Growth.
+
+Everything Your Business Needs To Scale.
+
+</p>
+
+<div
+style="
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+margin-bottom:25px;
+">
+
+<a href="#" style="color:white;text-decoration:none;">
+Facebook
+</a>
+
+<a href="#" style="color:white;text-decoration:none;">
+Instagram
+</a>
+
+<a href="#" style="color:white;text-decoration:none;">
+LinkedIn
+</a>
+
+<a href="https://wa.me/918850527116"
+style="color:white;text-decoration:none;">
+WhatsApp
+</a>
+
+</div>
+
+<p style="color:#94a3b8;">
+© 2026 Digital Seva. All Rights Reserved.
+</p>
+
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+
+<a
+href="https://wa.me/918850527116"
+target="_blank"
+style="
+position:fixed;
+bottom:25px;
+right:25px;
+background:#25D366;
+width:65px;
+height:65px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:30px;
+text-decoration:none;
+box-shadow:0 10px 30px rgba(0,0,0,.3);
+z-index:999;
+">
+
+💬
+
+</a>
+
+<script>
+
+document.querySelector("form")
+.addEventListener("submit", function(e){
+
+e.preventDefault();
+
+alert(
+"Thank you for contacting Digital Seva. We will contact you shortly."
+);
+
+});
+
+</script>
+
+</body>
+</html>
