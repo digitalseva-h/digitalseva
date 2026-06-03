@@ -179,16 +179,26 @@ gap:30px;
 }
 
 .service-card{
-background:#111c33;
-padding:35px;
-border-radius:20px;
-transition:.4s;
-border:1px solid rgba(255,215,0,.15);
+    overflow:hidden;
+    border-radius:25px;
+    background:#111c33;
+    transition:.4s;
+    box-shadow:0 20px 50px rgba(0,0,0,.3);
+}
+
+.service-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.service-content{
+    padding:25px;
 }
 
 .service-card:hover{
-transform:translateY(-10px);
-border-color:#FFD700;
+    transform:translateY(-12px);
+    box-shadow:0 30px 80px rgba(255,215,0,.2);
 }
 
 .service-card h3{
@@ -324,131 +334,252 @@ class="btn btn-whatsapp">
 
 <section id="services">
 
-<h2 class="section-title">
-Our Services
-</h2>
+<!-- SERVICES -->
 
-<div class="services-grid">
+<section id="services">
 
-<div
-class="service-card"
-onclick="openWhatsApp('Website Development')"
-style="cursor:pointer;">
-<h3>🌐 Website Development</h3>
-<ul>
-<li>Business Websites</li>
-<li>Ecommerce Websites</li>
-<li>Landing Pages</li>
-<li>WordPress Development</li>
-</ul>
-</div>
+    <h2 class="section-title">
+        Our Premium Services
+    </h2>
 
-<div
-class="service-card"
-onclick="openWhatsApp('App Development')"
-style="cursor:pointer;">
-<h3>📱 App Development</h3>
-<ul>
-<li>Android Apps</li>
-<li>iOS Apps</li>
-<li>Flutter Apps</li>
-<li>API Integrations</li>
-</ul>
-</div>
+    <div class="services-grid">
 
-<div
-class="service-card"
-onclick="openWhatsApp('Social Media Marketing')"
-style="cursor:pointer;">
-<h3>📣 Social Media Marketing</h3>
-<ul>
-<li>Facebook Marketing</li>
-<li>Instagram Marketing</li>
-<li>Content Creation</li>
-<li>Brand Awareness</li>
-</ul>
-</div>
+        <!-- Website Development -->
 
-<div
-class="service-card"
-onclick="openWhatsApp('Performance Marketing')"
-style="cursor:pointer;">
-<h3>📈 Performance Marketing</h3>
-<ul>
-<li>Lead Generation</li>
-<li>Sales Funnels</li>
-<li>Conversion Optimization</li>
-<li>ROI Campaigns</li>
-</ul>
-</div>
+        <div class="service-card"
+             onclick="openWhatsApp('Website Development')">
 
-<div
-class="service-card"
-onclick="openWhatsApp('Affiliate Marketing')"
-style="cursor:pointer;">
-<h3>🤝 Affiliate Marketing</h3>
-<ul>
-<li>Affiliate Setup</li>
-<li>Influencer Marketing</li>
-<li>Revenue Partnerships</li>
-<li>Tracking Systems</li>
-</ul>
-</div>
+            <img src="website.jfif"
+                 alt="Website Development">
 
-<div
-class="service-card"
-onclick="openWhatsApp('Business Strategy')"
-style="cursor:pointer;">
-<h3>🧠 Business Strategy</h3>
-<ul>
-<li>Business Planning</li>
-<li>Market Research</li>
-<li>Growth Consulting</li>
-<li>Revenue Scaling</li>
-</ul>
-</div>
+            <div class="service-content">
 
-<div
-class="service-card"
-onclick="openWhatsApp('Meta Ads')"
-style="cursor:pointer;">
-<h3>📊 Meta Ads</h3>
-<ul>
-<li>Facebook Ads</li>
-<li>Instagram Ads</li>
-<li>Retargeting</li>
-<li>Pixel Setup</li>
-</ul>
-</div>
+                <h3>🌐 Website Development</h3>
 
-<div
-class="service-card"
-onclick="openWhatsApp('Google Ads')"
-style="cursor:pointer;">
-<h3>🔍 Google Ads</h3>
-<ul>
-<li>Search Ads</li>
-<li>Display Ads</li>
-<li>YouTube Ads</li>
-<li>Shopping Campaigns</li>
-</ul>
-</div>
+                <p>
+                    Professional websites designed to generate leads,
+                    improve conversions and grow your business online.
+                </p>
 
-<div
-class="service-card"
-onclick="openWhatsApp('LinkedIn Ads')"
-style="cursor:pointer;">
-<h3>💼 LinkedIn Ads</h3>
-<ul>
-<li>B2B Leads</li>
-<li>Corporate Branding</li>
-<li>Recruitment Ads</li>
-<li>Audience Targeting</li>
-</ul>
-</div>
+                <ul>
+                    <li>✓ Business Websites</li>
+                    <li>✓ Landing Pages</li>
+                    <li>✓ E-Commerce Websites</li>
+                    <li>✓ WordPress Development</li>
+                    <li>✓ Website Maintenance</li>
+                </ul>
 
-</div>
+                <button class="service-btn">
+                    Get Free Consultation
+                </button>
 
+            </div>
+
+        </div>
+
+        <!-- Mobile App Development -->
+
+        <div class="service-card"
+             onclick="openWhatsApp('Mobile App Development')">
+
+            <img src="app.jfif"
+                 alt="Mobile App Development">
+
+            <div class="service-content">
+
+                <h3>📱 Mobile App Development</h3>
+
+                <p>
+                    Custom Android and iOS applications built for
+                    performance, scalability and user engagement.
+                </p>
+
+                <ul>
+                    <li>✓ Android Apps</li>
+                    <li>✓ iOS Apps</li>
+                    <li>✓ Flutter Apps</li>
+                    <li>✓ API Integrations</li>
+                    <li>✓ Admin Panels</li>
+                </ul>
+
+                <button class="service-btn">
+                    Get Free Consultation
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Social Media Marketing -->
+
+        <div class="service-card"
+             onclick="openWhatsApp('Social Media Marketing')">
+
+            <img src="socialmedia.jfif"
+                 alt="Social Media Marketing">
+
+            <div class="service-content">
+
+                <h3>📣 Social Media Marketing</h3>
+
+                <p>
+                    Build a powerful brand presence and engage your
+                    audience across social media platforms.
+                </p>
+
+                <ul>
+                    <li>✓ Instagram Marketing</li>
+                    <li>✓ Facebook Marketing</li>
+                    <li>✓ Content Creation</li>
+                    <li>✓ Brand Awareness</li>
+                    <li>✓ Community Management</li>
+                </ul>
+
+                <button class="service-btn">
+                    Get Free Consultation
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Paid Advertising -->
+
+        <div class="service-card"
+             onclick="openWhatsApp('Paid Advertising & Lead Generation')">
+
+            <img src="ads.jfif"
+                 alt="Paid Advertising">
+
+            <div class="service-content">
+
+                <h3>🚀 Paid Advertising & Lead Generation</h3>
+
+                <p>
+                    Generate qualified leads and increase sales through
+                    highly targeted advertising campaigns.
+                </p>
+
+                <ul>
+                    <li>✓ Meta Ads</li>
+                    <li>✓ Google Ads</li>
+                    <li>✓ LinkedIn Ads</li>
+                    <li>✓ Remarketing Campaigns</li>
+                    <li>✓ Lead Generation</li>
+                    <li>✓ Conversion Tracking</li>
+                    <li>✓ Sales Funnels</li>
+                </ul>
+
+                <button class="service-btn">
+                    Get Free Consultation
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Affiliate Marketing -->
+
+        <div class="service-card"
+             onclick="openWhatsApp('Affiliate Marketing')">
+
+            <img src="affiliate.jfif"
+                 alt="Affiliate Marketing">
+
+            <div class="service-content">
+
+                <h3>🤝 Affiliate Marketing</h3>
+
+                <p>
+                    Expand your reach and revenue through strategic
+                    affiliate partnerships and influencer campaigns.
+                </p>
+
+                <ul>
+                    <li>✓ Affiliate Programs</li>
+                    <li>✓ Influencer Marketing</li>
+                    <li>✓ Partnership Management</li>
+                    <li>✓ Revenue Tracking</li>
+                    <li>✓ Campaign Optimization</li>
+                </ul>
+
+                <button class="service-btn">
+                    Get Free Consultation
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Business Strategy -->
+
+        <div class="service-card"
+             onclick="openWhatsApp('Business Strategy & Planning')">
+
+            <img src="businessstrategy.jfif"
+                 alt="Business Strategy">
+
+            <div class="service-content">
+
+                <h3>🧠 Business Strategy & Planning</h3>
+
+                <p>
+                    Data-driven business planning and growth strategies
+                    that help companies scale faster.
+                </p>
+
+                <ul>
+                    <li>✓ Market Research</li>
+                    <li>✓ Competitor Analysis</li>
+                    <li>✓ Business Consulting</li>
+                    <li>✓ Growth Planning</li>
+                    <li>✓ Revenue Strategy</li>
+                </ul>
+
+                <button class="service-btn">
+                    Get Free Consultation
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- SEO -->
+
+        <div class="service-card"
+             onclick="openWhatsApp('SEO & Analytics')">
+
+            <img src="seo.jfif"
+                 alt="SEO Analytics">
+
+            <div class="service-content">
+
+                <h3>📊 SEO & Analytics</h3>
+
+                <p>
+                    Improve search rankings, increase organic traffic
+                    and track performance through analytics.
+                </p>
+
+                <ul>
+                    <li>✓ Technical SEO</li>
+                    <li>✓ Keyword Research</li>
+                    <li>✓ Local SEO</li>
+                    <li>✓ Google Analytics</li>
+                    <li>✓ Performance Reports</li>
+                </ul>
+
+                <button class="service-btn">
+                    Get Free Consultation
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 </section>
 <!-- PORTFOLIO -->
 
