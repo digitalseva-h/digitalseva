@@ -292,11 +292,17 @@ LinkedIn Ads and Lead Generation.
 
 <div class="hero-btns">
 
-<a href="#contact" class="btn btn-primary">
+<a
+href="javascript:void(0)"
+onclick="openWhatsApp('Free Consultation')"
+class="btn btn-primary">
+
 🚀 Free Consultation
+
 </a>
 
-<a href="https://wa.me/918850527116"
+<a href="javascript:void(0)"
+onclick="openWhatsApp('Digital Seva Enquiry')"
 class="btn btn-whatsapp">
 💬 WhatsApp Now
 </a>
@@ -324,7 +330,10 @@ Our Services
 
 <div class="services-grid">
 
-<div class="service-card">
+<div
+class="service-card"
+onclick="openWhatsApp('Website Development')"
+style="cursor:pointer;">
 <h3>🌐 Website Development</h3>
 <ul>
 <li>Business Websites</li>
@@ -334,7 +343,10 @@ Our Services
 </ul>
 </div>
 
-<div class="service-card">
+<div
+class="service-card"
+onclick="openWhatsApp('App Development')"
+style="cursor:pointer;">
 <h3>📱 App Development</h3>
 <ul>
 <li>Android Apps</li>
@@ -344,7 +356,10 @@ Our Services
 </ul>
 </div>
 
-<div class="service-card">
+<div
+class="service-card"
+onclick="openWhatsApp('Social Media Marketing')"
+style="cursor:pointer;">
 <h3>📣 Social Media Marketing</h3>
 <ul>
 <li>Facebook Marketing</li>
@@ -354,7 +369,10 @@ Our Services
 </ul>
 </div>
 
-<div class="service-card">
+<div
+class="service-card"
+onclick="openWhatsApp('Performance Marketing')"
+style="cursor:pointer;">
 <h3>📈 Performance Marketing</h3>
 <ul>
 <li>Lead Generation</li>
@@ -364,7 +382,10 @@ Our Services
 </ul>
 </div>
 
-<div class="service-card">
+<div
+class="service-card"
+onclick="openWhatsApp('Affiliate Marketing')"
+style="cursor:pointer;">
 <h3>🤝 Affiliate Marketing</h3>
 <ul>
 <li>Affiliate Setup</li>
@@ -374,7 +395,10 @@ Our Services
 </ul>
 </div>
 
-<div class="service-card">
+<div
+class="service-card"
+onclick="openWhatsApp('Business Strategy')"
+style="cursor:pointer;">
 <h3>🧠 Business Strategy</h3>
 <ul>
 <li>Business Planning</li>
@@ -384,7 +408,10 @@ Our Services
 </ul>
 </div>
 
-<div class="service-card">
+<div
+class="service-card"
+onclick="openWhatsApp('Meta Ads')"
+style="cursor:pointer;">
 <h3>📊 Meta Ads</h3>
 <ul>
 <li>Facebook Ads</li>
@@ -394,7 +421,10 @@ Our Services
 </ul>
 </div>
 
-<div class="service-card">
+<div
+class="service-card"
+onclick="openWhatsApp('Google Ads')"
+style="cursor:pointer;">
 <h3>🔍 Google Ads</h3>
 <ul>
 <li>Search Ads</li>
@@ -404,7 +434,10 @@ Our Services
 </ul>
 </div>
 
-<div class="service-card">
+<div
+class="service-card"
+onclick="openWhatsApp('LinkedIn Ads')"
+style="cursor:pointer;">
 <h3>💼 LinkedIn Ads</h3>
 <ul>
 <li>B2B Leads</li>
@@ -427,7 +460,10 @@ Our Portfolio
 
 <div class="services-grid">
 
-<div class="service-card">
+<div
+class="service-card"
+onclick="openWhatsApp('Corporate Website')"
+style="cursor:pointer;">
 <h3>🏢 Corporate Website</h3>
 <p>
 Professional company website with lead generation,
@@ -435,7 +471,10 @@ SEO optimization and CRM integration.
 </p>
 </div>
 
-<div class="service-card">
+<div
+class="service-card"
+onclick="openWhatsApp('Ecommerce Store')"
+style="cursor:pointer;">
 <h3>🛒 Ecommerce Store</h3>
 <p>
 Modern ecommerce platform with payment gateway,
@@ -443,7 +482,10 @@ inventory management and marketing automation.
 </p>
 </div>
 
-<div class="service-card">
+<div
+class="service-card"
+onclick="openWhatsApp('Healthcare App')"
+style="cursor:pointer;">
 <h3>🏥 Healthcare App</h3>
 <p>
 Appointment booking, telemedicine,
@@ -451,7 +493,10 @@ patient management and notifications.
 </p>
 </div>
 
-<div class="service-card">
+<div
+class="service-card"
+onclick="openWhatsApp('Education Platform')"
+style="cursor:pointer;">
 <h3>🏫 Education Platform</h3>
 <p>
 Online learning portal with video courses,
@@ -459,7 +504,10 @@ quizzes and student management.
 </p>
 </div>
 
-<div class="service-card">
+<div
+class="service-card"
+onclick="openWhatsApp('Real Estate')"
+style="cursor:pointer;">
 <h3>🏠 Real Estate Landing Page</h3>
 <p>
 Lead generation landing pages integrated with CRM,
@@ -467,7 +515,10 @@ WhatsApp and Meta Pixel.
 </p>
 </div>
 
-<div class="service-card">
+<div
+class="service-card"
+onclick="openWhatsApp('Performance Marketing')"
+style="cursor:pointer;">
 <h3>📈 Performance Marketing</h3>
 <p>
 Google Ads and Meta Ads campaigns generating
@@ -529,7 +580,7 @@ padding:40px;
 border-radius:20px;
 ">
 
-<form>
+<form id="leadForm">
 
 <input
 type="text"
@@ -751,16 +802,98 @@ z-index:999;
 
 <script>
 
-document.querySelector("form")
-.addEventListener("submit", function(e){
+const SCRIPT_URL =
+"https://script.google.com/macros/s/AKfycbxIkxOLsC096tyxIxmpm_SBdQLz_YxAOImCATrLV9bGshYnWMO4hxUCCWzv3mIqDB1T/exec";
+
+document
+.getElementById("leadForm")
+.addEventListener("submit", async function(e){
 
 e.preventDefault();
 
-alert(
-"Thank you for contacting Digital Seva. We will contact you shortly."
+const formData = {
+
+name:
+document.querySelector(
+'input[type="text"]'
+).value,
+
+email:
+document.querySelector(
+'input[type="email"]'
+).value,
+
+phone:
+document.querySelector(
+'input[type="tel"]'
+).value,
+
+service:
+document.querySelector(
+'select'
+).value,
+
+message:
+document.querySelector(
+'textarea'
+).value
+
+};
+
+try {
+
+await fetch(
+SCRIPT_URL,
+{
+method:"POST",
+body:JSON.stringify(formData)
+}
 );
 
+alert(
+"Thank you. Your enquiry has been submitted."
+);
+
+openWhatsApp(formData.service);
+
+this.reset();
+
+}
+catch(error){
+
+alert(
+"Something went wrong."
+);
+
+}
+
 });
+
+</script>
+<script>
+
+const whatsappNumber = "918850527116";
+
+function openWhatsApp(service = "General Enquiry") {
+
+    const message =
+`Hello Digital Seva,
+
+I am interested in ${service}.
+
+Please share details.
+
+Name:
+Business:
+Requirement:
+Budget:
+`;
+
+    const url =
+`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+
+    window.open(url, "_blank");
+}
 
 </script>
 
